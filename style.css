@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #d4f1f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  .container {
+    width: 600px;
+    margin: 100px 200px;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #7fcd91;
+  }
+  .inpbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  #inp {
+    width: 65%;
+    padding: 10px;
+    border: 2px solid #7fcd91;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .btn {
+    width: 30%;
+    background-color: #7fcd91;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #69b77f;
+  }
+  .result h3 {
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  #sbtn {
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #7fcd91;
+    font-size: 16px;
+    cursor: pointer;
+    color: #7fcd91;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  #sbtn:hover {
+    background-color: #7fcd91;
+    color: #ffffff;
+  }
+  .result .det {
+    display: flex;
+    gap: 10px;
+    color: #555555;
+    margin: 10px 0px;
+    font-size: 14px;
+  }
+  .exp {
+    border-left: 6px solid #7fcd91;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-style: italic;
+    color: #333333;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      width: 80%;
+      margin: 50px 0;
+      padding: 40px;
+    }
+    .inpbox {
+      flex-direction: column;
+      gap: 15px;
+    }
+    #inp {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+    }
+    .result h3 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 85%;
+      margin: 30px 0;
+      padding: 30px;
+    }
+    .result h3 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      margin: 20px 0;
+      padding: 20px;
+    }
+    .inpbox {
+      flex-direction: column;
+      gap: 10px;
+    }
+    #inp,
+    .btn {
+      width: 100%;
+    }
+    .result h3 {
+      font-size: 20px;
+    }
+  }
+  
